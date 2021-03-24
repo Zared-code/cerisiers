@@ -32,6 +32,16 @@ navbar.innerHTML= `<div class="navbar">
 // FIN INSTALLATION NAVBAR
 
 
+// INSTALLATION FOOTER
+const footer = document.getElementById('footer');
+footer.innerHTML= `<footer>
+<p>© 2021 - Sous les cerisiers</p>
+<a href="#">Mentions légales</a>
+<a href="#">Contact</a>
+</footer>`;
+// FIN INSTALLATION FOOTER
+
+
 // NAVBAR
 const menuBtn = document.querySelector('.hamburger');
 const ListMenu = document.querySelector('.navbar');

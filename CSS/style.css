@@ -712,6 +712,30 @@ a {
   font-weight: 700;
 }
 
+#footer {
+  min-height: 120px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+}
+#footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer footer p, #footer footer a {
+  font-size: 1rem;
+  color: #F1F1F1;
+  padding: 5px 10px;
+  font-weight: 500;
+  border-right: 2px solid #f1f1f167;
+}
+#footer footer :nth-child(3) {
+  border: none;
+}
+
 @media screen and (max-width: 1200px) {
   #navbar .navbar .name h2 {
     font-size: 24px;
@@ -1029,6 +1053,18 @@ a {
   }
   #tarifs .tarifs__cards--item {
     height: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #footer footer {
+    flex-direction: column;
+  }
+  #footer footer a, #footer footer p {
+    padding: 10px 5px;
+    border-right: none;
+    border-bottom: 2px solid #f1f1f167;
+    width: 100%;
+    text-align: center;
   }
 }
 

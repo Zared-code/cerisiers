@@ -696,6 +696,31 @@ a {
 
 // CONTACT SECTION
 
+// FOOTER
+#footer{
+    min-height: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p,a{
+            font-size: 1rem;
+            color: $light-grey;
+            padding: 5px 10px;
+            font-weight: 500;
+            border-right: 2px solid $light-grey-nav;
+        }
+        & :nth-child(3){
+            border: none;
+        }
+    }
+}
+
 @include littlescreen;
 @include tablette;
 @include portable;
