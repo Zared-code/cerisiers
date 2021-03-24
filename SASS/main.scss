@@ -99,7 +99,7 @@ a {
                 align-items: center;
                 color: $light-grey;
                 height: 110px;
-                border-bottom: 2px $light-grey solid;
+                border-bottom: 2px $light-grey-nav solid;
                 h3 {
                     font-size: 1.2rem;
                     font-family: "pacifico";
@@ -131,7 +131,7 @@ a {
                     align-items: flex-end;
                     li {
                         width: 50%;
-                        border-bottom: 2px solid $light-grey;
+                        border-bottom: 2px solid $light-grey-nav;
                         text-align: right;
                         a {
                             display: inline-block;

@@ -152,7 +152,7 @@ a {
   align-items: center;
   color: #F1F1F1;
   height: 110px;
-  border-bottom: 2px #F1F1F1 solid;
+  border-bottom: 2px #f1f1f167 solid;
 }
 #navbar .navbar__list--brand h3 {
   font-size: 1.2rem;
@@ -186,7 +186,7 @@ a {
 }
 #navbar .navbar__list--items ul li {
   width: 50%;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 2px solid #f1f1f167;
   text-align: right;
 }
 #navbar .navbar__list--items ul li a {
