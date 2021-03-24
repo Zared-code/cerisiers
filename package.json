@@ -1,0 +1,15 @@
+{
+  "name": "Souslescerisiers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch SASS/main.scss:CSS/style.css",
+    "sass-consultation": "sass --watch SASS/consultation.scss:CSS/style-consultation.css",
+    "sass-seance": "sass --watch SASS/séance.scss:CSS/style-seance.css",
+    "sass-parcours": "sass --watch SASS/parcours.scss:CSS/style-parcours.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

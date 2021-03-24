@@ -1,0 +1,122 @@
+@mixin littlescreen {
+    // MEDIA QUERIES 1200px
+    @media screen and (max-width: 1200px) {
+        // NAVBAR
+        #navbar{
+            .navbar{
+                .name{
+                    h2{
+                        font-size: 24px;
+                    }
+                }
+                &__list{
+                    &--items{
+                        ul{
+                            li{
+                                padding: 0 8px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // PRESENTATION SECTION
+        #parcours {
+            margin-top: 150px;
+            .parcours {
+                flex-direction: column;
+                width: 100%;
+                padding: 0 10px;
+                &__left {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &__right {
+                    width: 100%;
+                    h2 {
+                        font-size: 3rem;
+                    }
+                    h3 {
+                        font-family: "Montserrat";
+                        font-size: 2.25rem;
+                        font-weight: 600;
+                    }
+                    .contact,
+                    .contact__tel,
+                    .contact__mail {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .contact {
+                        width: 100%;
+                        &__tel,
+                        &__mail {
+                            margin: 0 20px;
+                            padding: 5px 20px;
+                            border: 2px solid $primary;
+                            border-radius: 25px;
+                            width: 300px;
+                            img {
+                                margin-right: 10px;
+                            }
+                            p {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    a {
+                        @include button(white, $violet-1, 15px, 36px, none, 20px);
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+        // HYPNOSE SECTION
+        #hypnose {
+            .hypnose {
+                &__top {
+                    min-height: 500px;
+                }
+            }
+        }
+
+        // CONSULTATION SECTION
+        #consultation {
+            .consultation {
+                &__cards {
+                    // GESTION DES BORDERS
+                    & :nth-child(2),
+                    & :nth-child(4) {
+                        border: none;
+                    }
+                    & :nth-child(3) {
+                        border-right: 3px solid $border;
+                    }
+                    // FIN
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        // SEANCE SECTION
+        #seance {
+            .seance {
+                &__cards {
+                    &--item {
+                        max-width: 1000px;
+                        width: 100%;
+                        border: none;
+                        .text {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

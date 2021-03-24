@@ -1,0 +1,79 @@
+#heroseance {
+  background: url("../img/cerisier-hero.jpg") top no-repeat;
+  background-size: cover;
+}
+#heroseance .heroseance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0px 10px;
+}
+#heroseance .heroseance h1 {
+  font-size: 4rem;
+  color: #ECE1ED;
+  max-width: 400px;
+  text-align: center;
+  margin-right: 20px;
+  text-shadow: #500357 5px 0px 0px, #500357 4.90033px 0.993347px 0px, #500357 4.60531px 1.94709px 0px, #500357 4.12668px 2.82321px 0px, #500357 3.48353px 3.58678px 0px, #500357 2.70151px 4.20736px 0px, #500357 1.81179px 4.6602px 0px, #500357 0.849836px 4.92725px 0px, #500357 -0.145998px 4.99787px 0px, #500357 -1.13601px 4.86924px 0px, #500357 -2.08073px 4.54649px 0px, #500357 -2.94251px 4.04248px 0px, #500357 -3.68697px 3.37732px 0px, #500357 -4.28444px 2.57751px 0px, #500357 -4.71111px 1.67494px 0px, #500357 -4.94996px 0.7056px 0px, #500357 -4.99147px -0.291871px 0px, #500357 -4.83399px -1.27771px 0px, #500357 -4.48379px -2.2126px 0px, #500357 -3.95484px -3.05929px 0px, #500357 -3.26822px -3.78401px 0px, #500357 -2.4513px -4.35788px 0px, #500357 -1.53666px -4.75801px 0px, #500357 -0.560763px -4.96845px 0px, #500357 0.437495px -4.98082px 0px, #500357 1.41831px -4.79462px 0px, #500357 2.34258px -4.41727px 0px, #500357 3.17346px -3.86382px 0px, #500357 3.87783px -3.15633px 0px, #500357 4.4276px -2.32301px 0px, #500357 4.80085px -1.39708px 0px, #500357 4.98271px -0.415447px 0px;
+}
+#heroseance .heroseance .citation {
+  background-color: #ccb0ced5;
+  max-width: 650px;
+  padding: 20px 20px 40px 20px;
+  position: relative;
+}
+#heroseance .heroseance .citation p {
+  font-size: 1.9rem;
+  font-family: "Mr Dafoe";
+  text-align: center;
+}
+#heroseance .heroseance .citation .auteur {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 1.7rem;
+}
+
+#seance .seance__cards {
+  margin-bottom: 50px;
+  margin-top: 0px !important;
+}
+#seance .seance__cards :nth-child(2) .text {
+  min-height: 282px;
+  justify-content: flex-start;
+}
+#seance .seance__cards :nth-child(4) .text {
+  min-height: 358px;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1300px) {
+  #seance .seance__cards--item .text {
+    min-height: fit-content !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  #heroseance .heroseance {
+    flex-direction: column;
+  }
+  #heroseance .heroseance h1 {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #heroseance .heroseance h1 {
+    max-width: 250px;
+    font-size: 2.7rem;
+    margin-right: 0;
+  }
+  #heroseance .heroseance .citation p {
+    font-size: 1.7rem;
+  }
+  #heroseance .heroseance .citation .auteur {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style-seance.css.map */

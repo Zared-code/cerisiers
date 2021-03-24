@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+#parcourspage {
+    .parcourspage {
+        width: 100%;
+        h1 {
+            font-size: 3rem;
+            color: $violet2;
+            margin: 150px 0 20px 0;
+        }
+        &__element {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            width: 100%;
+            height: fit-content;
+            &--left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 40px;
+                .image {
+                    @include bubble-parcours;
+                }
+                .formation {
+                    max-width: 630px;
+                    padding: 25px;
+                    margin-top: 50px;
+                    background-color: $violet1;
+                    border-radius: 20px;
+                    h2 {
+                        color: $light-grey;
+                        text-align: center;
+                    }
+                    p {
+                        color: $light-grey;
+                        text-align: justify;
+                        line-height: 134%;
+                        margin: 10px 0;
+                    }
+                }
+            }
+            &--right{
+                max-width: 630px;
+                margin: 20px 40px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 180%;
+                    padding: 5px 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 1170px){
+    #parcourspage{
+        .parcourspage{
+            &__element{
+                &--right{
+                    p{
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 991px){
+    #parcourspage{
+        .parcourspage{
+            &__element{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 768px){
+    #parcourspage{
+        .parcourspage{
+            h1{
+                margin: 80px 0 20px 0;
+            }
+            &__element{
+                &--left{
+                    margin: 10px;
+                    .image {
+                        border: 25px white solid;
+                        height: 250px;
+                        width: 250px;
+                        &::after {
+                            border: 22px $primary solid;
+                        }
+                    }
+                }
+                &--right{
+                    margin: 10px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
