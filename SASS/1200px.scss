@@ -69,6 +69,8 @@
                     }
                     a {
                         @include button(white, $violet-1, 15px, 36px, none, 20px);
+                        width: -webkit-fit-content;
+                        width: -moz-fit-content;
                         width: fit-content;
                     }
                 }

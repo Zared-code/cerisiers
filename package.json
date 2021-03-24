@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch SASS/main.scss:CSS/style.css",
-    "sass-consultation": "sass --watch SASS/consultation.scss:CSS/style-consultation.css",
-    "sass-seance": "sass --watch SASS/séance.scss:CSS/style-seance.css",
-    "sass-parcours": "sass --watch SASS/parcours.scss:CSS/style-parcours.css"
+    "sass": "sass --watch SASS/main.scss:CSS/style.css --style compressed",
+    "sass-consultation": "sass --watch SASS/consultation.scss:CSS/style-consultation.css --style compressed",
+    "sass-seance": "sass --watch SASS/séance.scss:CSS/style-seance.css --style compressed",
+    "sass-parcours": "sass --watch SASS/parcours.scss:CSS/style-parcours.css --style compressed"
   },
   "keywords": [],
   "author": "",
