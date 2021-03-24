@@ -59,20 +59,23 @@
     flex-direction: column;
   }
   #heroseance .heroseance h1 {
-    margin-bottom: 50px;
+    margin: 75px 0 20px 0;
   }
 }
 @media screen and (max-width: 768px) {
+  #heroseance {
+    padding-bottom: 10px;
+  }
   #heroseance .heroseance h1 {
     max-width: 250px;
     font-size: 2.7rem;
     margin-right: 0;
   }
   #heroseance .heroseance .citation p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   #heroseance .heroseance .citation .auteur {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 

@@ -100,7 +100,7 @@
         .heroseance{
             flex-direction: column;
             h1{
-                margin-bottom: 50px;
+                margin: 75px 0 20px 0;
             }
         }
     }
@@ -110,6 +110,7 @@
 @media screen and (max-width: 768px) {
     // SEANCE SECTION
     #heroseance{
+        padding-bottom: 10px;
         .heroseance{
             h1{
                 max-width: 250px;
@@ -118,10 +119,10 @@
             }
             .citation{
                 p{
-                    font-size: 1.7rem;
+                    font-size: 1.4rem;
                 }
                 .auteur{
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                 }
             }
         }
