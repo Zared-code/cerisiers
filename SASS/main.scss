@@ -674,9 +674,9 @@ a {
                             bottom: 20px;
                             transform: translateX(-50%);
                             font-weight: 500;
-                            width: -webkit-fit-content;
-                            width: -moz-fit-content;
-                            width: fit-content;
+                            width: -webkit-max-content;
+                            width: -moz-max-content;
+                            width: max-content;
                         }
                     }
                     .price {
