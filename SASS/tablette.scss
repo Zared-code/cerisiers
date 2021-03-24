@@ -124,8 +124,22 @@
                                 a {
                                     padding: 0;
                                 }
+                                &:nth-child(7){
+                                    border: none;
+                                }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-height : 510px) {
+        #navbar{
+            .navbar{
+                &__list{
+                    &--brand{
+                        display: none;
                     }
                 }
             }
