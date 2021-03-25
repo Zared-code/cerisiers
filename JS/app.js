@@ -59,3 +59,76 @@ menuBtn.addEventListener('click', () => {
     }
 })
 // FIN NAVBAR
+
+
+
+
+// ANIMATION
+gsap.registerPlugin(ScrollTrigger);
+
+const sectiontitle = gsap.utils.toArray('.sectiontitle');
+sectiontitle.forEach(title => {
+  gsap.from(title, { 
+    y: 100,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: title,
+      start: "top 90%"
+    }
+  })
+  gsap.to(title, { 
+    y: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: title,
+      start: "top 90%"
+    }
+  })
+});
+
+
+const left = gsap.utils.toArray('.leftanim');
+left.forEach(element => {
+  gsap.from(element, { 
+    x: -200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%"
+    }
+  })
+  gsap.to(element, { 
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%"
+    }
+  })
+});
+
+const right = gsap.utils.toArray('.rightanim');
+right.forEach(element => {
+  gsap.from(element, { 
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%"
+    }
+  })
+  gsap.to(element, { 
+    x: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%"
+    }
+  })
+});
+
+// FIN ANIMATIONS
