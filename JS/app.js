@@ -24,7 +24,7 @@ navbar.innerHTML= `<div class="navbar">
             <li><a href="séance.html">Séance</a></li>
             <li><a href="parcours.html">Parcours</a></li>
             <li><a href="index.html#tarifs">Tarifs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </div>

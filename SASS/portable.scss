@@ -1,8 +1,7 @@
 @mixin portable {
     // MEDIA QUERIES PORTABLE
     @media screen and (max-width: 768px) {
-
-        h2{
+        h2 {
             font-size: 1.7rem;
             text-align: center;
         }
@@ -14,6 +13,10 @@
                     h1 {
                         font-size: 3rem;
                         text-align: center;
+                        margin: 20px 0;
+                    }
+                    h2{
+                        font-size: 2rem;
                     }
                 }
                 &__bottom {
@@ -107,13 +110,13 @@
                 &__bottom {
                     padding: 0 10px;
                 }
-                &__faq{
-                    .question{
-                        h3{
+                &__faq {
+                    .question {
+                        h3 {
                             font-size: 1.2rem;
                         }
                     }
-                    p{
+                    p {
                         font-size: 0.9rem;
                     }
                 }
@@ -133,27 +136,31 @@
         }
 
         // SEANCE SECTION
-        #seance{
-            .seance{
-                &__cards{
-                    &--item{
+        #seance {
+            .seance {
+                &__cards {
+                    &--item {
                         padding: 0 10px;
                     }
                 }
             }
         }
+        // CONTACT SECTION
+        #contact {
+            padding: 50px 0;
+        }
 
         // TARIF SECTION
-        #tarifs{
+        #tarifs {
             padding-bottom: 50px;
-            .tarifs{
-                h2{
+            .tarifs {
+                h2 {
                     font-size: 2rem;
                 }
-                &__cards{
+                &__cards {
                     justify-content: center;
                     margin-top: 20px;
-                    &--item{
+                    &--item {
                         height: 500px;
                     }
                 }
@@ -161,16 +168,33 @@
         }
     }
 
-    @media screen and (max-width : 500px) {
-        #footer{
-            footer{
+    @media screen and (max-width: 500px) {
+        #footer {
+            footer {
                 flex-direction: column;
-                a,p{
+                a,
+                p {
                     padding: 10px 5px;
                     border-right: none;
                     border-bottom: 2px solid $light-grey-nav;
                     width: 100%;
                     text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (max-width : 454px){
+        #hero{
+            .hero{
+                &__top{
+                    &--titles{
+                        h1{
+                            margin: 0;
+                        }
+                        h2{
+                            font-size: 1.4rem;
+                        }
+                    }
                 }
             }
         }

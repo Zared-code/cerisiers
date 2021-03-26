@@ -40,7 +40,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
 }
 .morebutton {
     @include button(white, $violet-1, 15px, 36px, none, 20px);
@@ -141,7 +141,7 @@ a {
                             padding: 10px;
                             transform: scale(1);
                             transition: 0.3s transform ease-in-out;
-                            &:hover{
+                            &:hover {
                                 transform: scale(1.1);
                             }
                         }
@@ -191,8 +191,8 @@ a {
                 // FIN ANIMATION
             }
         }
-        &.open{
-            .navbar__list{
+        &.open {
+            .navbar__list {
                 right: 0px;
             }
         }
@@ -208,14 +208,15 @@ a {
         &__top {
             background: url("../img/cerisier-hero.jpg") left;
             background-size: cover;
-            min-height: 75vh;
+            height: max-content;
             z-index: 1;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            ::after {
+            padding: 150px 0;
+            &::after {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -226,9 +227,27 @@ a {
                 opacity: 0.2;
                 z-index: -1;
             }
-            h1 {
-                font-size: 4rem;
-                color: $primary;
+            &--titles {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h2,
+                h1 {
+                    font-size: 3rem;
+                    color: $violet2;
+                    text-shadow: rgb(241, 241, 241) 2px 0px 0px, rgb(241, 241, 241) 1.75517px 0.958851px 0px,
+                        rgb(241, 241, 241) 1.0806px 1.68294px 0px, rgb(241, 241, 241) 0.141474px 1.99499px 0px,
+                        rgb(241, 241, 241) -0.832294px 1.81859px 0px, rgb(241, 241, 241) -1.60229px 1.19694px 0px,
+                        rgb(241, 241, 241) -1.97998px 0.28224px 0px, rgb(241, 241, 241) -1.87291px -0.701566px 0px,
+                        rgb(241, 241, 241) -1.30729px -1.5136px 0px, rgb(241, 241, 241) -0.421592px -1.95506px 0px,
+                        rgb(241, 241, 241) 0.567324px -1.91785px 0px, rgb(241, 241, 241) 1.41734px -1.41108px 0px,
+                        rgb(241, 241, 241) 1.92034px -0.558831px 0px;
+                }
+                h1{
+                    font-size: 4rem;
+                    margin: 30px 0;
+                }
             }
             .border {
                 position: absolute;
@@ -670,7 +689,7 @@ a {
                             margin-bottom: 30px;
                             text-align: center;
                         }
-                        .longtitle{
+                        .longtitle {
                             margin-bottom: 10px;
                             line-height: 120%;
                         }
@@ -704,27 +723,67 @@ a {
 }
 
 // CONTACT SECTION
+#contact {
+    background-color: $violet-3;
+    min-height: 0px;
+    padding: 150px 0;
+    .contact {
+        width: 100%;
+        h2 {
+            margin-bottom: 50px;
+        }
+        &__cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 840px;
+            width: 100%;
+            &--item {
+                height: 220px;
+                width: 100%;
+                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-bottom: 3px solid $violet1;
+                box-shadow: 0px 16px 40px #c49acf50;
+                margin: 10px;
+                img {
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-weight: 600;
+                    color: $violet2;
+                }
+            }
+        }
+    }
+}
 
 // FOOTER
-#footer{
+#footer {
     min-height: 120px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #353535;
-    footer{
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        p,a{
+        p,
+        a {
             font-size: 1rem;
             color: $light-grey;
             padding: 5px 10px;
             font-weight: 500;
             border-right: 2px solid $light-grey-nav;
         }
-        & :nth-child(3){
+        & :nth-child(3) {
             border: none;
         }
     }
