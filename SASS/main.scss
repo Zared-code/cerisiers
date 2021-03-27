@@ -244,7 +244,7 @@ a {
                         rgb(241, 241, 241) 0.567324px -1.91785px 0px, rgb(241, 241, 241) 1.41734px -1.41108px 0px,
                         rgb(241, 241, 241) 1.92034px -0.558831px 0px;
                 }
-                h1{
+                h1 {
                     font-size: 4rem;
                     margin: 30px 0;
                 }
@@ -758,6 +758,14 @@ a {
                     font-weight: 600;
                     color: $violet2;
                 }
+            }
+        }
+        &__map {
+            max-width: 840px;
+            width: 100%;
+            padding: 10px;
+            .frame{
+                box-shadow: 0px 16px 40px #c49acf50;
             }
         }
     }
