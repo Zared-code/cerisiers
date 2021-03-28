@@ -211,6 +211,8 @@ html{
         &__top {
             background: url("../img/cerisier-hero.jpg") left;
             background-size: cover;
+            height: -webkit-max-content;
+            height: -moz-max-content;
             height: max-content;
             z-index: 1;
             position: relative;
@@ -341,7 +343,7 @@ html{
                         margin-right: 10px;
                     }
                     p {
-                        font-weight: 700;
+                        font-weight: 600;
                     }
                 }
             }
