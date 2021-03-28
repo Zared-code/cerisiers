@@ -37,7 +37,7 @@ const footer = document.getElementById('footer');
 footer.innerHTML= `<footer>
 <p>© 2021 - Sous les cerisiers</p>
 <a href="#">Mentions légales</a>
-<a href="#">Contact</a>
+<a href="contact.html">Contact</a>
 </footer>`;
 // FIN INSTALLATION FOOTER
 
