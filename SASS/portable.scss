@@ -15,7 +15,10 @@
                         text-align: center;
                         margin: 20px 0;
                     }
-                    h2{
+                    .titlebottom {
+                        margin-top: 20px;
+                    }
+                    h2 {
                         font-size: 2rem;
                     }
                 }
@@ -148,7 +151,7 @@
         // CONTACT SECTION
         #contact {
             padding: 50px 0;
-            h2{
+            h2 {
                 margin-top: 40px;
             }
         }
@@ -186,15 +189,15 @@
             }
         }
     }
-    @media screen and (max-width : 454px){
-        #hero{
-            .hero{
-                &__top{
-                    &--titles{
-                        h1{
+    @media screen and (max-width: 454px) {
+        #hero {
+            .hero {
+                &__top {
+                    &--titles {
+                        h1 {
                             margin: 0;
                         }
-                        h2{
+                        h2 {
                             font-size: 1.4rem;
                         }
                     }
