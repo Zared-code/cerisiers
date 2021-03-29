@@ -20,7 +20,7 @@ navbar.innerHTML= `<div class="navbar">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="hypnose-thérapeutique.html">L'hypnose</a></li>
-            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="consultation.html">Pourquoi consulter ?</a></li>
             <li><a href="séance.html">Séance</a></li>
             <li><a href="parcours.html">Parcours</a></li>
             <li><a href="index.html#tarifs">Tarifs</a></li>
