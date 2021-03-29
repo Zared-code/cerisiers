@@ -270,10 +270,10 @@ html{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 0 30px;
+            padding: 0 30px 20px 30px;
+            position: relative;
             &--text {
                 max-width: 1000px;
-                position: relative;
                 p {
                     font-family: "Mr Dafoe";
                 }
@@ -282,8 +282,8 @@ html{
                 }
                 .auteur {
                     position: absolute;
-                    right: 0px;
-                    bottom: -30px;
+                    right: 30px;
+                    bottom: 0px;
                     font-size: 2.5rem;
                 }
             }
