@@ -68,7 +68,9 @@
                         &__tel,
                         &__mail {
                             margin: 10px 10px;
-                            width: 290px;
+                            max-width: 310px;
+                            width: 100%;
+                            flex-wrap: wrap;
                             img {
                                 margin-right: 10px;
                             }
