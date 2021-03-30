@@ -42,6 +42,10 @@ a {
     align-items: center;
     overflow: hidden;
 }
+.morebutton {
+    @include button(white, $violet-1, 15px, 36px, none, 20px);
+    margin-top: 30px;
+}
 .main-section {
     display: flex;
     flex-direction: column;
