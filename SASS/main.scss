@@ -340,8 +340,11 @@ html{
                     img {
                         margin-right: 10px;
                     }
-                    .text {
+                    .text, a {
                         font-weight: 600;
+                        color: $violet2;
+                        font-size: 1rem;
+                        text-decoration: none;
                     }
                 }
             }

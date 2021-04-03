@@ -55,15 +55,11 @@
                     }
                     .contact {
                         flex-direction: column;
-                        &__tel,
-                        &__mail {
+                        &__item {
                             margin: 10px 10px;
                             max-width: 310px;
                             width: 100%;
                             flex-wrap: wrap;
-                            .text {
-                                border: none;
-                            }
                         }
                     }
                 }
