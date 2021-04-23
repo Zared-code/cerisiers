@@ -330,13 +330,18 @@ html{
                 align-items: center;
             }
             .contact {
+                flex-direction: column;
                 width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 &__item {
-                    margin: 0 20px;
+                    margin: 10px 0px;
                     padding: 5px 20px;
                     border: 2px solid $primary;
                     border-radius: 25px;
-                    width: 300px;
+                    max-width: 421px;
+                    width: 100%;
                     img {
                         margin-right: 10px;
                     }
@@ -345,6 +350,9 @@ html{
                         color: $violet2;
                         font-size: 1rem;
                         text-decoration: none;
+                    }
+                    .littlemail{
+                        display: none;
                     }
                 }
             }
@@ -643,6 +651,8 @@ html{
         p{
             font-size: 1.2rem;
             font-weight: 500;
+            padding: 0 10px;
+            max-width: 930px;
         }
         &__cards {
             max-width: 1200px;
@@ -719,14 +729,11 @@ html{
                         p {
                             font-size: 1.5rem;
                             font-weight: 500;
-                            margin: 5px 0;
+                            margin: 10px 0;
                             text-align: center;
                             span {
                                 font-weight: 700;
                             }
-                        }
-                        .deplacement{
-                            font-size: 1rem;
                         }
                     }
                 }
@@ -775,6 +782,10 @@ html{
                 p {
                     font-weight: 600;
                     color: $violet2;
+                    text-align: center;
+                }
+                .littlemail{
+                    display: none;
                 }
             }
         }

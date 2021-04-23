@@ -56,8 +56,9 @@
                     .contact {
                         flex-direction: column;
                         &__item {
+                            padding: 10px 5px;
                             margin: 10px 10px;
-                            max-width: 310px;
+                            max-width: 330px;
                             width: 100%;
                             flex-wrap: wrap;
                         }
@@ -136,6 +137,9 @@
                 h2 {
                     font-size: 2rem;
                 }
+                p{
+                    font-size: 1rem;
+                }
                 &__cards {
                     justify-content: center;
                     margin-top: 20px;
@@ -172,6 +176,40 @@
                         }
                         h2 {
                             font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 350px) {
+        #parcours {
+            .parcours {
+                &__right{
+                    .contact{
+                        &__item{
+                            .bigmail{
+                                display: none;
+                            }
+                            .littlemail{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact{
+            .contact{
+                &__cards{
+                    &--item{
+                        .bigmail{
+                            display: none;
+                        }
+                        .littlemail{
+                            display: block;
                         }
                     }
                 }

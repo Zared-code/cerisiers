@@ -8,15 +8,12 @@
 
 @mixin bubble-parcours {
     position: relative;
+    background: url("../img/portrait.jpg") center;
+    background-size: cover;
     border: 25px white solid;
     height: 415px;
     width: 415px;
     border-radius: 100%;
-    img {
-        border-radius: 100%;
-        width: 100%;
-        height: 100%;
-    }
     &::after {
         content: "";
         position: absolute;
