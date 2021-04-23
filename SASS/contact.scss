@@ -58,6 +58,8 @@
                         height: 50px;
                     }
                     textarea{
+                        height: -webkit-fit-content;
+                        height: -moz-fit-content;
                         height: fit-content;
                     }
 
